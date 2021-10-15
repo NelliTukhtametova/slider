@@ -1,0 +1,38 @@
+.cont {
+  display: flex;
+  align-items: center;
+}
+#slide {
+width: 200px;
+margin: 40px auto;
+display: flex;
+overflow: hidden;
+}
+.slide {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  transition: all ease 1s;  	
+  display: none;
+}
+.dots {
+  text-align: center;
+  margin: 20px 0;
+}
+.dot{
+cursor: pointer;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background-color: #000;
+opacity: 1;
+display: inline-block;
+
+}
+.dot.active{
+opacity: .6;
+}
+.slide.active {
+  display: block;
+}
+
